@@ -1,0 +1,12 @@
+<h1>Edit Article</h1>
+
+<%# passing a model object to form_with, 
+like model: @article in the edit view above, 
+will cause form helpers to fill in form fields with 
+the corresponding values of the object %>
+
+<%= render 'form' %>
+
+<%# back button -> goes back to index action %>
+
+<%= link_to 'Back', articles_path %>
