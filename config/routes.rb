@@ -5,8 +5,11 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  # resources -> creates the restful routes for articles
-  resources :articles
+  # resources -> creates the restful routes for articles + their comments
+  resources :articles do
+    resources :comments
+  end
+
 
 
 end
