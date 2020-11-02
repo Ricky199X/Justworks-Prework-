@@ -1,16 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 // component imports
-import NewHome from '../components/NewHome'
+import Welcome from '../components/Welcome'
 
 class App extends React.Component {
 
 
     render() {
         return (
-            <NewHome />
+            <Router>
+                <div>
+                    <Switch>
+                        <Route exact path='/' component={Welcome} />
+                    </Switch>
+                </div>
+            </Router>
         )
     }
 }
