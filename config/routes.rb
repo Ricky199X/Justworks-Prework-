@@ -10,6 +10,13 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-
+  # namespace :api, defaults: { format: :json } do
+  #   namespace :v1 do
+  #     resources :articles do 
+  #   end
+  # end
+  # namespace :api do
+  #   resources :articles
+  # end
 
 end

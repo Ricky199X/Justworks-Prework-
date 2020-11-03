@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 // component imports
 import Welcome from '../components/Welcome'
+import Articles from '../components/Articles'
 
 class App extends React.Component {
 
@@ -15,6 +16,7 @@ class App extends React.Component {
                 <div>
                     <Switch>
                         <Route exact path='/' component={Welcome} />
+                        <Route exact path='/articles' component={Articles} />
                     </Switch>
                 </div>
             </Router>
